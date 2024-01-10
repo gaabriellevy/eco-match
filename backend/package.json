@@ -1,0 +1,19 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Eco Match - o que é lixo para uns é luxo para outros",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gaabriellevy/eco-match.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gaabriellevy/eco-match/issues"
+  },
+  "homepage": "https://github.com/gaabriellevy/eco-match#readme"
+}
