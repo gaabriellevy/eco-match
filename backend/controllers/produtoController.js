@@ -11,6 +11,21 @@ module.exports = {
         }
     },
 
+    async show(req, res) {
+        try {
+            const item = await Produto.findByPk(req.params.id);
+
+            if (item) {
+                return res.json(item);
+            }else {
+                return res.status(404).json();
+            }
+        } catch (error) {
+            console.error(error);
+            return res.status(500).json({ error: 'Erro ao encontrar produto.' });
+        }
+    },
+
     async store (req, res) {
         try {
             const { nome, descricao, preco } = req.body;
