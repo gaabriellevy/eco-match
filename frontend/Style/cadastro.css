@@ -1,0 +1,110 @@
+
+.cadastro {
+  display: flex;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  justify-content: space-between;
+  background-color:  #002908;
+}
+/*Barra de Navegação*/
+    .barra-lateral {
+      width: 200px;
+      min-height: 100vh;
+      background: linear-gradient(-45deg,#001C06, #00310B, #00480F, #003D0D, #005011, #005913, #005E14, #005E14, #005E14);
+      color: #fff;
+      padding: 20px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .logo {
+        width: 105px;
+        height: 80px;
+        border-radius: 50%;
+        margin-bottom: 20px;
+    }
+
+    .foto-usuario {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        margin-bottom: 20px;
+    }
+
+    .caixa-info {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .caixa-info input,
+    
+    .caixa-info select {
+        width: 80%;
+        padding: 5px;
+        margin-top: 5px;
+        border: none;
+        border-radius: 5px;
+        background-color:  #005E14; 
+        color: white;
+    }
+
+
+
+/*Conteudo*/
+    .container {
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color:  #002908;
+    }
+
+    .galeria {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .galeria img {
+      width: 20%;
+      cursor: pointer;
+    }
+
+    .info-produto {
+      margin-top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      
+    }
+
+    .info-produto input, .info-produto textarea {
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 5px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 5px;  background-color:  #002908;
+      color: white;
+    }
+
+    button {
+      padding: 10px;
+      background-color: #005E14;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    button:hover {
+      background-color: #00a824;
+    }
+
+
