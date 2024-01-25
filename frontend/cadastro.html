@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="Style/cadastro.css">
+  <title>Eco-Match</title>
+
+</head>
+<body>
+  <div class="cadastro">
+    <div class="barra-lateral">
+      <img class="logo" src="imagens/LogoSEMfundo.png" alt="Logo">
+      <img class="foto-usuario" src="imagens/usuario.png" alt="Foto do Usuário">
+
+      <div class="caixa-info">
+          <input type="text" placeholder="Nome">
+      </div>
+
+      <div class="caixa-info">
+          <input type="text" placeholder="Email">
+      </div>
+
+      <div class="caixa-info">
+          <input type="text" placeholder="Telefone">
+      </div>
+
+      <div class="caixa-info">
+          <input type="text" placeholder="Endereço">
+      </div>
+
+      <div class="caixa-info">
+          <input type="text" placeholder="Cidade">
+      </div>
+
+      <div class="caixa-info">
+          <select>
+              <option value="" disabled selected>UF</option>
+              <option value="AC">Acre</option>
+              <option value="AL">Alagoas</option>
+              <option value="AC">Acre</option>
+              <option value="AL">Alagoas</option>
+              <option value="AP">Amapá</option>
+              <option value="AM">Amazonas</option>
+              <option value="BA">Bahia</option>
+              <option value="CE">Ceará</option>
+              <option value="DF">Distrito Federal</option>
+              <option value="ES">Espírito Santo</option>
+              <option value="GO">Goiás</option>
+              <option value="MA">Maranhão</option>
+              <option value="MT">Mato Grosso</option>
+              <option value="MS">Mato Grosso do Sul</option>
+              <option value="MG">Minas Gerais</option>
+              <option value="PA">Pará</option>
+              <option value="PB">Paraíba</option>
+              <option value="PR">Paraná</option>
+              <option value="PE">Pernambuco</option>
+              <option value="PI">Piauí</option>
+              <option value="RJ">Rio de Janeiro</option>
+              <option value="RN">Rio Grande do Norte</option>
+              <option value="RS">Rio Grande do Sul</option>
+              <option value="RO">Rondônia</option>
+              <option value="RR">Roraima</option>
+              <option value="SC">Santa Catarina</option>
+              <option value="SP">São Paulo</option>
+              <option value="SE">Sergipe</option>
+              <option value="TO">Tocantins</option>
+          </select>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="galeria" id="galeriaImagens">
+          <img src="imagens/imagem +.jpg" alt="Produto 1" onclick="selecionarImagem(1)">
+          <img src="imagens/imagem +.jpg" onclick="selecionarImagem(2)">
+          <img src="imagens/imagem +.jpg" onclick="selecionarImagem(3)">
+          <img src="imagens/imagem +.jpg" onclick="selecionarImagem(4)">
+          
+      </div>
+
+      <div class="info-produto">
+          <input type="text" id="nomeProduto" placeholder="Nome do Produto">
+          <textarea id="descricaoProduto" placeholder="Descrição"></textarea>
+          <input type="text" id="categoriaProduto" placeholder="Categoria">
+          <input type="text" id="condicaoProduto" placeholder="Condição">
+          <input type="text" id="precoProduto" placeholder="Preço (opcional)" oninput="formatarMoeda(this)">
+      </div>
+
+      <button onclick="salvarProduto()">Salvar</button>
+      <button onclick="voltar()">Voltar</button>
+    </div>
+
+    
+  </div>
+
+  <script>
+    function formatarMoeda(input) {
+        var valor = input.value.replace(/\D/g, ''); 
+        valor = (valor / 100).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }); 
+        input.value = valor;
+    }
+  </script>
+
+</body>
+</html>
