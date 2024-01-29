@@ -1,0 +1,106 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: white;
+}
+.container {
+  display: flex;
+  width: 80%;
+  background-color: white;
+  overflow: hidden;
+}
+.esquerda {
+  flex: 1;
+  padding: 40px;
+}
+.direita {
+  flex: 1;
+  
+}
+.imagem{ 
+  width: 110%; 
+  margin: auto;
+  text-align: center;
+  margin-top: 70px;
+}
+
+h2 {
+  margin-top: 0;
+}
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  box-sizing: border-box;
+}
+input[type="checkbox"] {
+  margin-top: 10px;
+}
+input[type="submit"], .login-btn {
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+input[type="submit"] {
+  background-color:#3A5B22/*#00310B*/;
+  color: #fff;
+}
+.login-btn.google {
+  background-color: #dd4b39;
+  color: #fff;
+}
+.login-btn.apple {
+  background-color: #000;
+  color: #fff;
+}
+input[type="submit"]:hover, .login-btn:hover {
+  opacity: 0.8;
+}
+.esqueci-senha {
+  margin-top: 10px;
+  text-align: right;
+}
+.esqueci-senha a {
+  color: #007bff;
+  text-decoration: none;
+}
+.login-direto{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.linhaOU {
+  text-align: center;
+  position: relative;
+  margin-top: 20px; 
+  margin-bottom: 50px; 
+}
+
+.linha {
+  display: inline-block;
+  width: 100%; 
+  border-bottom: 1px solid rgba(0, 0, 0, 0.13);
+}
+
+.texto {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white; 
+  padding: 0 5px; 
+}
+
+
