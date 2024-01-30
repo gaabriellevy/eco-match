@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
+
+
+
+.telaPrincipal {
+    display: flex;
+    font-family: 'Aclonica', sans-serif;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    background-color: #002908;
+}
+
+.caixa-da-barra-lateral {
+    width: 248px;
+    height: 56px;
+    flex-shrink: 0;
+    color: var(--Label-Dark-Secondary, rgba(235, 235, 245, 0.60));
+    font-family: Aclonica;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    /* 22.1px */
+}
+
+.barra-lateral {
+    width: 247px;
+    height: 1117px;
+    flex-shrink: 0;
+    background: linear-gradient(168deg, #005E14 1.62%, #000 95.72%);
+}
+
+.logo {
+    width: 84.916px;
+    height: 71.537px;
+    transform: rotate(0.067deg);
+    flex-shrink: 0;
+}
+
+.imagem-das-laterais {
+    color: var(--Label-Dark-Secondary, rgba(235, 235, 245, 0.60));
+    font-family: "SF Pro Text";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    /* 19.5px */
+}
+
+.foto-usuario {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.caixa-info {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.caixa-info input,
+
+.caixa-info select {
+    width: 80%;
+    padding: 5px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #005E14;
+    color: white;
+}
+
+
+
+/*Conteudo*/
+.mainContent {
+    width: 1492px;
+    height: 1117px;
+    flex-shrink: 0;
+    background: #00320B;
+    box-shadow: -10px 30px 80px 0px rgba(59, 38, 123, 0.70);
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.galeria img {
+    width: 20%;
+    cursor: pointer;
+}
+
+.info-produto {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+
+.info-produto input,
+.info-produto textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #002908;
+    color: white;
+}
+
+.btn {
+    padding: 10px;
+    background-color: #005E14;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    margin: 15px 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    outline: none;
+    position: relative;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    background: none;
+}
+
+.btn:hover {
+    background-color: #00a824;
+}
+
+.btn-sep {
+    padding: 25px 60px 25px 120px;
+}
+
+.btn-sep:before {
+    background: rgba(0, 0, 0, 0.15);
+}
+
+.icon-menu::before{
+    content: "\f07a";
+}
