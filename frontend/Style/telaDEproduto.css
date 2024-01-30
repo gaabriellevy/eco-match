@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
+
+ *{
+  font-family: 'Aclonica', sans-serif;
+}
+.container {
+  max-width: 1080px; 
+  margin: 0 auto;
+  padding: 20px;
+  margin-left: 230px; 
+}
+
+.produto {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.produto .imagens {
+  display: flex;
+}
+
+.produto .imagens img {
+  width: 25%; 
+  height: auto;
+}
+
+.produto .info {
+  padding: 20px;
+}
+
+.produto .info h2 {
+  margin-top: 0;
+}
+/* Barra de Navegação */
+.barra-lateral {
+  width: 210px;
+  min-height: 100vh;
+  background: linear-gradient(#005e14b7, #005e14f3, #005E14, #005E14, #005913, #005011, #003D0D, #00480F, #00310B, #001C06, black);
+  color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+}
+
+.logo {
+  width: 105px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  color: darkgray;
+}
+
+

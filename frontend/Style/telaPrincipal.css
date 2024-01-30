@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
+
+ *{
+  font-family: 'Aclonica', sans-serif;
+}
+/* Barra de Navegação */
+.barra-lateral {
+  width: 210px;
+  min-height: 100vh;
+  background: linear-gradient(#005e14b7, #005e14f3, #005E14, #005E14, #005913, #005011, #003D0D, #00480F, #00310B, #001C06, black);
+  color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+}
+
+.logo {
+  width: 105px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  color: darkgray;
+}
+.menu {
+  background-color: #001C06;
+  padding: 10px;
+  margin-left: 210px;
+  
+}
+.explorar {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  margin-bottom: 10px;
+}
+
+.explorar input[type="text"] {
+  width: 300px; 
+  height: 25px;
+  padding: 8px;
+  border-radius: 10px; 
+  border: none;
+  outline: none;
+  background-color: #005E14;
+  color: #fff;
+}
+
+.explorar button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.explorar button img {
+  width: 20px;
+}
+
+.menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.menu ul li {
+  display: inline-block;
+  margin-right: 10px; 
+
+}
+
+.menu ul li:last-child {
+  margin-right: 0;
+}
+
+.menu ul li a {
+  color: darkgrey;
+  text-decoration: none;
+  padding: 5px;
+  position: relative;
+}
+
+.menu ul li a:hover::after {
+  content: '';
+  width: 100%;
+  height: 3px;
+  background-color: #005e14f3;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.conteudo-principal {
+  margin-left: 210px;
+  background-color: #001C06;
+}
+
+.container1 {
+  display: flex;
+}
+.container2 {
+  display: flex;
+}
+.box {
+  width: 1000px;
+  margin: 10px;
+  padding: 15px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background: linear-gradient(to bottom, #ffffff 0%, #f0f0f0 100%);
+}
+
+.box img {
+  max-width: 100%;
+  height: auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  max-width: 100%; 
+  max-height: 650px; 
+}
+
+.box h3, .box p {
+  margin: 10px 0 5px 0;
+  text-align: center;
+}
