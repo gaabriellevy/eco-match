@@ -6,6 +6,7 @@
   <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
   <link rel="stylesheet" href="Style/login.css">
   <script src="https://kit.fontawesome.com/95ecdef344.js" crossorigin="anonymous"></script>
+  <script src="js/cadastro.js" defer></script>
   <title>Eco-Match</title>
 
 </head>
@@ -13,12 +14,16 @@
   <div class="container">
     <div class="esquerda">
         <h2>Cadastro</h2>
-        <form action="#" method="post">
-            <input type="text" name="nome" placeholder="Nome" required>
+        <form id="cadastro-usuario-form">
+            <input type="text" name="nome" id="nome" placeholder="Nome" required>
 
-            <input type="text" name="email" placeholder="E-mail" required>
+            <input type="text" name="email"  id="email" placeholder="E-mail" required>
 
-            <input type="password" name="senha" placeholder="Senha" required>
+            <input type="password" name="senha" id="senha" placeholder="Senha" required>
+
+            <input type="text" name="endereco" id="endereco" placeholder="Endereço" required>
+            <input type="text" name="cpf" id="cpf" placeholder="CPF" required>
+
             
             <label>
                 <input type="checkbox" name="manter_conectado"> Eu concordo com os <strong> termos & politica </strong>
@@ -34,7 +39,7 @@
             <button class="login-btn google" style= "margin-right: 10px;" ><i class="fa-brands fa-google"></i>  Login com Google</button>
             <button class="login-btn apple"><i class="fa-brands fa-apple"></i>  Login com Apple</button>
             </div>
-          
+          <p id="mensagem"></p> 
         </form>
       <p style= "text-align: center;"> Já possui conta? <a href="login.html"> Logar </a></p>
     </div>
