@@ -4,103 +4,51 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
-  <link rel="stylesheet" href="Style/cadastro.css">
+  <link rel="stylesheet" href="Style/login.css">
+  <script src="https://kit.fontawesome.com/95ecdef344.js" crossorigin="anonymous"></script>
+  <script src="js/cadastro.js" defer></script>
   <title>Eco-Match</title>
 
 </head>
 <body>
-  <div class="cadastro">
-    <div class="barra-lateral">
-      <img class="logo" src="imagens/LogoSEMfundo.png" alt="Logo">
-      <img class="foto-usuario" src="imagens/usuario.png" alt="Foto do Usuário">
+  <div class="container">
+    <div class="esquerda">
+        <h2>Cadastro</h2>
+        <form id="cadastro-usuario-form">
+            <input type="text" name="nome" id="nome" placeholder="Nome" required>
 
-      <div class="caixa-info">
-          <input type="text" placeholder="Nome">
-      </div>
+            <input type="text" name="email"  id="email" placeholder="E-mail" required>
 
-      <div class="caixa-info">
-          <input type="text" placeholder="Email">
-      </div>
+            <input type="password" name="senha" id="senha" placeholder="Senha" required>
 
-      <div class="caixa-info">
-          <input type="text" placeholder="Telefone">
-      </div>
+            <input type="text" name="endereco" id="endereco" placeholder="Endereço" required>
+            <input type="text" name="cpf" id="cpf" placeholder="CPF" required>
 
-      <div class="caixa-info">
-          <input type="text" placeholder="Endereço">
-      </div>
+            
+            <label>
+                <input type="checkbox" name="manter_conectado"> Eu concordo com os <strong> termos & politica </strong>
+            </label>
+            <input type="submit" value="Cadastrar">
 
-      <div class="caixa-info">
-          <input type="text" placeholder="Cidade">
-      </div>
+            <div class="linhaOU">
+              <span class="linha"></span>
+              <span class="texto">ou</span>
+            </div>
 
-      <div class="caixa-info">
-          <select>
-              <option value="" disabled selected>UF</option>
-              <option value="AC">Acre</option>
-              <option value="AL">Alagoas</option>
-              <option value="AC">Acre</option>
-              <option value="AL">Alagoas</option>
-              <option value="AP">Amapá</option>
-              <option value="AM">Amazonas</option>
-              <option value="BA">Bahia</option>
-              <option value="CE">Ceará</option>
-              <option value="DF">Distrito Federal</option>
-              <option value="ES">Espírito Santo</option>
-              <option value="GO">Goiás</option>
-              <option value="MA">Maranhão</option>
-              <option value="MT">Mato Grosso</option>
-              <option value="MS">Mato Grosso do Sul</option>
-              <option value="MG">Minas Gerais</option>
-              <option value="PA">Pará</option>
-              <option value="PB">Paraíba</option>
-              <option value="PR">Paraná</option>
-              <option value="PE">Pernambuco</option>
-              <option value="PI">Piauí</option>
-              <option value="RJ">Rio de Janeiro</option>
-              <option value="RN">Rio Grande do Norte</option>
-              <option value="RS">Rio Grande do Sul</option>
-              <option value="RO">Rondônia</option>
-              <option value="RR">Roraima</option>
-              <option value="SC">Santa Catarina</option>
-              <option value="SP">São Paulo</option>
-              <option value="SE">Sergipe</option>
-              <option value="TO">Tocantins</option>
-          </select>
-      </div>
+            <div class= "login-direto">
+            <button class="login-btn google" style= "margin-right: 10px;" ><i class="fa-brands fa-google"></i>  Login com Google</button>
+            <button class="login-btn apple"><i class="fa-brands fa-apple"></i>  Login com Apple</button>
+            </div>
+          <p id="mensagem"></p> 
+        </form>
+      <p style= "text-align: center;"> Já possui conta? <a href="login.html"> Logar </a></p>
     </div>
-
-    <div class="container">
-      <div class="galeria" id="galeriaImagens">
-          <img src="imagens/imagem +.jpg" alt="Produto 1" onclick="selecionarImagem(1)">
-          <img src="imagens/imagem +.jpg" onclick="selecionarImagem(2)">
-          <img src="imagens/imagem +.jpg" onclick="selecionarImagem(3)">
-          <img src="imagens/imagem +.jpg" onclick="selecionarImagem(4)">
-          
-      </div>
-
-      <div class="info-produto">
-          <input type="text" id="nomeProduto" placeholder="Nome do Produto">
-          <textarea id="descricaoProduto" placeholder="Descrição"></textarea>
-          <input type="text" id="categoriaProduto" placeholder="Categoria">
-          <input type="text" id="condicaoProduto" placeholder="Condição">
-          <input type="text" id="precoProduto" placeholder="Preço (opcional)" oninput="formatarMoeda(this)">
-      </div>
-
-      <button onclick="salvarProduto()">Salvar</button>
-      <button onclick="voltar()">Voltar</button>
+  
+    <div class="direita">
+      <img src="imagens/LogoSEMfundo.png" alt="Descrição da imagem" class="imagem">
     </div>
-
-    
+      
   </div>
-
-  <script>
-    function formatarMoeda(input) {
-        var valor = input.value.replace(/\D/g, ''); 
-        valor = (valor / 100).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }); 
-        input.value = valor;
-    }
-  </script>
 
 </body>
 </html>

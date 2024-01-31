@@ -15,7 +15,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
             link = document.createElement('a');
                 imagem = document.createElement('img');
-                imagem.src = "imagens/ComputadorDAecomatch.jpg";
+                if(e.imagem)
+                    imagem.src = "imagens/"+e.imagem;
+                else
+                    imagem.src = "imagens/ComputadorDAecomatch.jpg";
             link.append(imagem);
 
 
