@@ -5,6 +5,12 @@ module.exports = (sequelize, DataTypes) => {
     class Produto extends Model {}
 
     Produto.init({
+        id: {
+            allowNull: false,
+            autoIncrement: true,
+            primaryKey: true,
+            type: DataTypes.INTEGER
+        },
         nome: {
             type: DataTypes.STRING,
             allowNull: false,
