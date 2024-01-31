@@ -28,6 +28,24 @@ module.exports = {
 
     },
 
+    async login(req, res) {
+        try {
+            const { email, senha } = req.body;
+
+            const item = await Usuario.findOne({ where: { email: email, senha: senha } });
+
+
+            if (item) {
+                return res.send({login: 'success', userData: item});
+            }else {
+                return res.send({login: 'failed'});
+            }
+        } catch (error) {
+            console.error(error);
+            return res.status(500).json({ error: 'Internal Server Error' });
+        }
+    },
+
     async store(req, res) {
         try {
             const { nome, email, cpf, senha, endereco } = req.body;

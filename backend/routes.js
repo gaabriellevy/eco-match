@@ -7,6 +7,7 @@ const produtoController = require('./controllers/produtoController');
 Routes.get('/usuarios', usuarioController.index);
 Routes.get('/usuarios/:cpf', usuarioController.show);
 Routes.post('/usuarios', usuarioController.store);
+Routes.post('/usuarios/login', usuarioController.login);
 Routes.put('/usuarios/:cpf', usuarioController.update);
 Routes.delete('/usuarios/:cpf', usuarioController.destroy);
 

@@ -1,6 +1,6 @@
 'use strict';
 const { Model } = require('sequelize');
-const Usuario = require('./usuario');
+// const Usuario = require('./usuario');
 module.exports = (sequelize, DataTypes) => {
     class PontoColeta extends Model {}
 
@@ -22,7 +22,7 @@ module.exports = (sequelize, DataTypes) => {
         modelName: 'PontoColeta',
     });
 
-    PontoColeta.belongsTo(Usuario, {foreignKey: 'cpf_usuario'});
+    // PontoColeta.belongsTo(Usuario, {foreignKey: 'cpf_usuario'});
 
     return PontoColeta;
 };
