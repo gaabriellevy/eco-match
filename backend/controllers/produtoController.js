@@ -28,8 +28,8 @@ module.exports = {
 
     async store (req, res) {
         try {
-            const { nome, descricao, preco } = req.body;
-            const novoProduto = await Produto.create({ nome, descricao, preco });
+            const { nome, imagem, descricao, preco } = req.body;
+            const novoProduto = await Produto.create({ nome, imagem, descricao, preco });
             res.status(201).json(novoProduto);
         } catch (error) {
             console.error(error);
